@@ -1,0 +1,55 @@
+///Grade
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main ()
+{
+    int mark;
+
+    cout << "enter your mark: "<< endl;
+    cin >> mark;
+    char c = 2;
+
+    if(mark < 0)
+    {
+        cout << "invalid mark "<< c <<endl;
+    }
+
+    if(mark < 0)
+    {
+        cout << "invalid mark "<< c <<endl;
+    }
+    else if(mark >= 100)
+    {
+        cout << "invalid mark "<< c <<endl;
+    }
+    else if(mark >= 80)
+    {
+        cout << " Grade = A+ " <<endl;
+    }
+    else if(mark >= 70)
+    {
+        cout << "Grade = A " <<endl;
+    }
+    else if(mark >= 60)
+    {
+        cout << "Grade = A- " <<endl;
+    }
+    else if(mark >= 50)
+    {
+        cout << "Grade = B " <<endl;
+    }
+    else if(mark >= 40)
+    {
+        cout << "Grade = C " <<endl;
+    }
+    else if(mark >= 33)
+    {
+        cout << "Grade = D " <<endl;
+    }
+    else
+    {
+        cout << "Result: Fail (Sad song)"<<c<< endl;
+    }
+    getch();
+}
