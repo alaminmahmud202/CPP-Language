@@ -1,0 +1,12 @@
+///Print Hello Mahmud's World
+
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main ()
+{
+   cout<< "Hello Mahmud's World" << endl;
+   
+    getch();
+}
