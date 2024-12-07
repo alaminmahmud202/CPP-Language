@@ -1,0 +1,19 @@
+/// conditional operator
+
+#include <iostream>
+#include<conio.h>
+using namespace std;
+int main  ()
+
+{ 
+int num, num1;
+    cin >> num, num1;
+
+    (num%2==0)? cout << "numver is even "<< num   : cout << "number is odd " << num1;
+
+
+
+getch ();
+    }
+
+
