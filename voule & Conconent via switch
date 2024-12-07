@@ -1,0 +1,29 @@
+///voule & conconent via switch
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+char QZ;
+ cout<<"enter a word or letter"<< endl;
+ cin>> QZ ;
+
+ QZ = tolower(QZ);//boro hater dileo jate problem na hoi
+
+ switch (QZ)
+ {
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+    cout<< "vowel"<< endl;
+    break;
+
+default :
+        cout << "conconent"<< endl;
+        break;
+
+ }
+return 0;
+}
