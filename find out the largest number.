@@ -57,3 +57,20 @@ int main() {
     return 0;
 }
 
+
+///OR
+/// maximum number or a large number
+
+ #include<iostream>
+using namespace std;
+int main ()
+{
+
+ int num1, num2;
+ cout << "Enter the number"<<endl;
+ cin >> num1>> num2;
+ int max = ( num1> num2)? num1 : num2;
+ cout << "the large number "<<max;
+return 0;
+}
+
