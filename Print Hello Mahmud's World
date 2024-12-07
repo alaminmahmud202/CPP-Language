@@ -2,11 +2,10 @@
 
 
 #include<iostream>
-#include<conio.h>
 using namespace std;
 int main ()
 {
    cout<< "Hello Mahmud's World" << endl;
    
-    getch();
+    return 0;
 }
