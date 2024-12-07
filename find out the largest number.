@@ -1,0 +1,59 @@
+///find out the largest number.
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+  int num1, num2, num3;
+
+    cout << "Enter the three numbers: " << endl;
+    cin >> num1 >> num2 >> num3;
+
+    if (num1 > num2 && num1 > num3) {
+        cout << "num1 is big" << endl;
+    }
+    else if (num2 > num1 && num2 > num3) {
+        cout << "num2 is big" << endl;
+    }
+    else if (num3 > num1 && num3 > num2) {
+        cout << "num3 is big" << endl;
+    }
+    else {
+        cout << "There are the same numbers in this input" << endl;
+    }
+
+
+ return 0;
+    }
+
+
+
+/// OR
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, num3;
+
+    cout << "Enter three numbers: " << endl;
+    cin >> num1 >> num2 >> num3;
+
+    int largest;
+
+    // Compare the numbers to find the largest
+    if (num1 >= num2 && num1 >= num3) {
+        largest = num1;
+    }
+    else if (num2 >= num1 && num2 >= num3) {
+        largest = num2;
+    }
+    else {
+        largest = num3;
+    }
+
+    cout << "The largest number is: " << largest << endl;
+
+    return 0;
+}
+
