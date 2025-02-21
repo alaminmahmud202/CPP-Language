@@ -1,0 +1,46 @@
+///Program to Calculate the Solution of Quadratic Equation and value of the X
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Output {
+public:
+    void display();
+};
+
+void Output::display() {
+    double a, b, c;
+    cout << "Enter coefficients a, b, and c: ";
+    cin >> a >> b >> c;
+
+    if (a == 0) {  // Handle non-quadratic case
+        if (b == 0) {
+            cout << "Invalid equation (both a and b are 0)" << endl;
+        } else {
+            double root = -c / b;
+            cout << "Linear solution: " << root << endl;
+        }
+        return;
+    }
+
+    double discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0) { // Two distinct real roots
+        double root1 = (-b + sqrt(discriminant)) / (2 * a);
+        double root2 = (-b - sqrt(discriminant)) / (2 * a);
+        cout << "Real Roots: " << root1 << " and " << root2 << endl;
+    } else if (discriminant == 0) { // One real root (repeated)
+        double root = -b / (2 * a);
+        cout << "Repeated Root: " << root << endl;
+    } else { // Complex roots
+        double realPart = -b / (2 * a);
+        double imaginaryPart = sqrt(-discriminant) / (2 * a);
+        cout << "Complex Roots: " << realPart << " ± " << imaginaryPart << "i" << endl;
+    }
+}
+
+int main() {
+    Output obj;
+    obj.display();
+    return 0;
+}
