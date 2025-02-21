@@ -1,0 +1,39 @@
+#include<iostream>
+#include <conio.h>
+using namespace std;
+class student
+{
+public:
+    int id ;
+    float gpa;
+    void display ()
+    {
+        cout<<" id & gpa "<<id<<" " << gpa << endl;
+    }
+    //perameterized constructor, object er value initialized korar jonno
+   student(int x, float y)
+   {
+       id = x;
+       gpa = y;
+   }
+   //defoult constructor
+   student ()
+   {
+       cout << "Defoult constructor"<< endl;
+   }
+};
+
+
+
+int main ()
+{
+student();
+student Alim(101, 3.80) ;
+Alim.display();
+
+student mahmud(240, 3.98);
+mahmud.display();
+
+
+    getch();
+}
