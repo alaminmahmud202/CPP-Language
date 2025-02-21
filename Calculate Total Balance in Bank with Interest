@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>  // Include cmath for pow() function
+
+using namespace std;
+
+int main() {
+    double invest, rate, time;
+
+    cout << "Enter your investment: " << endl;
+    cin >> invest;
+    
+    cout << "Enter your profit rate: " << endl;
+    cin >> rate;
+    
+    cout << "Enter your investing time: " << endl;
+    cin >> time;
+
+    // Correct calculation using pow()
+    double total = invest * pow(1 + rate / 100, time);
+
+    cout << "Your total balance after " << time << " years: " << total << endl;
+
+    return 0;
+}
