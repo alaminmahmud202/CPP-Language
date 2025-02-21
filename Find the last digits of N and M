@@ -17,3 +17,10 @@ int main() {
 
     return 0;
 }
+
+
+//Processing:
+//Last digit of 12345 = 5
+//Last digit of 6789 = 9
+//Sum of last digits: 5 + 9 = 14
+//output:14
