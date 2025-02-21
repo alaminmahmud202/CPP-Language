@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;  // Declare once and reuse
+
+    /// **Break Statement**
+    for (i = 0; i <= 50; i++) {
+        if (i == 5) {
+            break; // Loop terminates when i == 5
+        }
+        cout << "Break Statement check: " << i << endl;
+    }
+
+    cout << "\n"; // Line break for clarity
+
+    /// **Continue Statement**
+    for (i = 1; i <= 100; i++) {
+        if (i == 10 || i == 12) { // 10 & 12 are skipped
+            continue;
+        }
+        cout << "Windows by Mahmud: " << i << endl;
+    }
+
+    cout << "\n"; // Line break for clarity
+
+    /// **Continue and Break Together**
+    for (i = 1; i <= 20; i += 3) { // i increments by 3
+        if (i == 11) {
+            continue; // Skips 11
+        }
+        if (i > 15) {
+            break; // Stops at 15
+        }
+        cout << "Continue and Break check: " << i << endl;
+    }
+
+    return 0; // End program correctly
+}
